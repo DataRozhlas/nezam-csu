@@ -4,7 +4,7 @@ Highcharts.setOptions({
     },
   });
 
-fetch('./nezam.json')
+fetch('https://data.irozhlas.cz/nezam-csu/nezam.json')
   .then(response => response.json())
   .then(d => {
     const upd = Object.keys(d).slice(-1)[0].split('-');
